@@ -1,9 +1,13 @@
 using UnityEngine;
 
-public class confirmSeed : MonoBehaviour
+public class plantationPath : MonoBehaviour
 {
-    [SerializeField] private GameObject selectSlot;
+    [SerializeField] public GameObject selectSlot;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public void SetSlot(GameObject slot)
+    {
+        selectSlot = slot;
+    }
     void Start()
     {
         

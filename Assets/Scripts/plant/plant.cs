@@ -11,6 +11,7 @@ public class plant : MonoBehaviour
     [SerializeField] private Sprite plantDay4;
     public float plantDay = 0; //startando o dia atua da platação em 0, provavelmente é melhor dar essa atribuição em outro lugar, mas ainda n sei 
     public float seedPlant = 0; //guardando qual a planta desse slot //no momento so funciona a usando a cenoura
+    [SerializeField] private GameObject selectDisplay;
  
     
 
@@ -21,12 +22,21 @@ public class plant : MonoBehaviour
         
     }
 
+    public void OnMouseDown() //função chamada quando clica no slot
+    {
+        plantation();
+    }
     
     public void plantation() //chamando a função diretamente com um componente button que acessa essa função
     {
         if(plantDay == 0) //se o slot n tem plantação
         {
-            plantDay = plantDay + 1; // coloca planta no dia/estagio 1
+            
+            selectDisplay.SetActive(true); //ativa a tela de seleção de sement
+            var path = selectDisplay.GetComponent<plantationPath>();
+            path.SetSlot(gameObject); //passando slot como parametro
+             //manda o slot atual para o script plantationPath
+            
         }
 
         //aumentar os dias da planta para testar ela passar pelos estagio de crescimento, esse função será excluida e os dias;estagio da planta seram mudadas automaticamente quando passar os dias no jogo

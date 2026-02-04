@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 99884851}
   - component: {fileID: 99884852}
   - component: {fileID: 99884854}
-  - component: {fileID: 99884853}
+  - component: {fileID: 99884855}
   m_Layer: 0
   m_Name: plantDig (3)
   m_TagString: Untagged
@@ -258,7 +258,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &99884853
+--- !u!114 &99884854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99884849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &99884855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -302,7 +323,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 99884854}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -314,26 +335,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &99884854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99884849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &275969961
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -421,7 +422,7 @@ GameObject:
   - component: {fileID: 280223345}
   - component: {fileID: 280223346}
   - component: {fileID: 280223348}
-  - component: {fileID: 280223347}
+  - component: {fileID: 280223349}
   m_Layer: 0
   m_Name: plantDig (18)
   m_TagString: Untagged
@@ -548,7 +549,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &280223347
+--- !u!114 &280223348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280223343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &280223349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -592,7 +614,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 280223348}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -604,26 +626,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &280223348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280223343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &423556716
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,7 +2081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2115,7 +2117,7 @@ GameObject:
   - component: {fileID: 454226716}
   - component: {fileID: 454226717}
   - component: {fileID: 454226719}
-  - component: {fileID: 454226718}
+  - component: {fileID: 454226720}
   m_Layer: 0
   m_Name: plantDig (20)
   m_TagString: Untagged
@@ -2242,7 +2244,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &454226718
+--- !u!114 &454226719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454226714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &454226720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2286,7 +2309,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 454226719}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -2298,26 +2321,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &454226719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454226714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &464318959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,7 +2518,7 @@ GameObject:
   - component: {fileID: 481649986}
   - component: {fileID: 481649987}
   - component: {fileID: 481649989}
-  - component: {fileID: 481649988}
+  - component: {fileID: 481649990}
   m_Layer: 0
   m_Name: plantDig (4)
   m_TagString: Untagged
@@ -2642,7 +2645,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &481649988
+--- !u!114 &481649989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481649984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &481649990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2686,7 +2710,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 481649989}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -2698,26 +2722,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &481649989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481649984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2915,8 +2919,8 @@ Transform:
   - {fileID: 1237073230}
   - {fileID: 2123685472}
   - {fileID: 1414332370}
-  - {fileID: 99884850}
   - {fileID: 764021912}
+  - {fileID: 99884850}
   - {fileID: 1966365024}
   - {fileID: 1177916000}
   m_Father: {fileID: 0}
@@ -3158,7 +3162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3194,7 +3198,7 @@ GameObject:
   - component: {fileID: 764021913}
   - component: {fileID: 764021914}
   - component: {fileID: 764021916}
-  - component: {fileID: 764021915}
+  - component: {fileID: 764021917}
   m_Layer: 0
   m_Name: plantDig (6)
   m_TagString: Untagged
@@ -3211,7 +3215,7 @@ Transform:
   m_GameObject: {fileID: 764021911}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.99000025, y: 0.11, z: 0}
+  m_LocalPosition: {x: 0.99000037, y: 0.11, z: 0}
   m_LocalScale: {x: 1.0437382, y: 1.0437382, z: 1.0437382}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3321,7 +3325,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &764021915
+--- !u!114 &764021916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764021911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &764021917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3365,7 +3390,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 764021916}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -3377,26 +3402,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &764021916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764021911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &764865669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,7 +3414,7 @@ GameObject:
   - component: {fileID: 764865671}
   - component: {fileID: 764865672}
   - component: {fileID: 764865674}
-  - component: {fileID: 764865673}
+  - component: {fileID: 764865675}
   m_Layer: 0
   m_Name: plantDig (5)
   m_TagString: Untagged
@@ -3536,7 +3541,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &764865673
+--- !u!114 &764865674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764865669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &764865675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3580,7 +3606,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 764865674}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -3592,26 +3618,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &764865674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764865669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &949115904
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,7 +3630,7 @@ GameObject:
   - component: {fileID: 949115906}
   - component: {fileID: 949115907}
   - component: {fileID: 949115909}
-  - component: {fileID: 949115908}
+  - component: {fileID: 949115910}
   m_Layer: 0
   m_Name: plantDig (8)
   m_TagString: Untagged
@@ -3751,7 +3757,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &949115908
+--- !u!114 &949115909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949115904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &949115910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3795,7 +3822,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 949115909}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -3807,26 +3834,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &949115909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949115904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1150420802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3836,13 +3843,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1150420803}
+  - component: {fileID: 1150420804}
   m_Layer: 5
   m_Name: plantChoice
-  m_TagString: Untagged
+  m_TagString: seedSelect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1150420803
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3869,6 +3877,19 @@ RectTransform:
   m_AnchoredPosition: {x: 35, y: 13}
   m_SizeDelta: {x: 177.6779, y: 205.42}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1150420804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150420802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5cc3024c59d30a4a99a6984d8dd10d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  selectSlot: {fileID: 0}
 --- !u!1 &1175208431
 GameObject:
   m_ObjectHideFlags: 0
@@ -3982,6 +4003,7 @@ MonoBehaviour:
   plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
   plantDay: 0
   seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
 --- !u!61 &1175208435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4012,7 +4034,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -4096,7 +4118,7 @@ GameObject:
   - component: {fileID: 1177916001}
   - component: {fileID: 1177916002}
   - component: {fileID: 1177916004}
-  - component: {fileID: 1177916003}
+  - component: {fileID: 1177916005}
   m_Layer: 0
   m_Name: plantDig (1)
   m_TagString: Untagged
@@ -4223,7 +4245,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &1177916003
+--- !u!114 &1177916004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177915999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &1177916005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4267,7 +4310,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 1177916004}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -4279,26 +4322,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1177916004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177915999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1207092090
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,7 +4334,7 @@ GameObject:
   - component: {fileID: 1207092092}
   - component: {fileID: 1207092093}
   - component: {fileID: 1207092095}
-  - component: {fileID: 1207092094}
+  - component: {fileID: 1207092096}
   m_Layer: 0
   m_Name: plantDig (16)
   m_TagString: Untagged
@@ -4438,7 +4461,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &1207092094
+--- !u!114 &1207092095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207092090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &1207092096
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4482,7 +4526,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 1207092095}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -4494,26 +4538,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1207092095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207092090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1237073229
 GameObject:
   m_ObjectHideFlags: 0
@@ -4526,7 +4550,7 @@ GameObject:
   - component: {fileID: 1237073231}
   - component: {fileID: 1237073232}
   - component: {fileID: 1237073234}
-  - component: {fileID: 1237073233}
+  - component: {fileID: 1237073235}
   m_Layer: 0
   m_Name: plantDig (2)
   m_TagString: Untagged
@@ -4653,7 +4677,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &1237073233
+--- !u!114 &1237073234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237073229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &1237073235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4697,7 +4742,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 1237073234}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -4709,26 +4754,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1237073234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237073229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1258179879
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,7 +4805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4816,7 +4841,7 @@ GameObject:
   - component: {fileID: 1397148907}
   - component: {fileID: 1397148908}
   - component: {fileID: 1397148910}
-  - component: {fileID: 1397148909}
+  - component: {fileID: 1397148911}
   m_Layer: 0
   m_Name: plantDig (11)
   m_TagString: Untagged
@@ -4943,7 +4968,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &1397148909
+--- !u!114 &1397148910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397148905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &1397148911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4987,7 +5033,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 1397148910}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -4999,26 +5045,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1397148910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397148905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1414332369
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,7 +5057,7 @@ GameObject:
   - component: {fileID: 1414332371}
   - component: {fileID: 1414332372}
   - component: {fileID: 1414332374}
-  - component: {fileID: 1414332373}
+  - component: {fileID: 1414332375}
   m_Layer: 0
   m_Name: plantDig (14)
   m_TagString: Untagged
@@ -5158,7 +5184,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &1414332373
+--- !u!114 &1414332374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414332369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &1414332375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5202,7 +5249,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 1414332374}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -5214,26 +5261,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1414332374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414332369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1485223163
 GameObject:
   m_ObjectHideFlags: 0
@@ -5285,7 +5312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5362,7 +5389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5398,6 +5425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e9275060df9b9489a057badac4caf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::confirmSeed
+  selectSlot: {fileID: 0}
 --- !u!114 &1495459553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5454,7 +5482,7 @@ GameObject:
   - component: {fileID: 1536219751}
   - component: {fileID: 1536219752}
   - component: {fileID: 1536219754}
-  - component: {fileID: 1536219753}
+  - component: {fileID: 1536219755}
   m_Layer: 0
   m_Name: plantDig (22)
   m_TagString: Untagged
@@ -5581,7 +5609,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &1536219753
+--- !u!114 &1536219754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536219749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &1536219755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5625,7 +5674,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 1536219754}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -5637,26 +5686,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1536219754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536219749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1550090095
 GameObject:
   m_ObjectHideFlags: 0
@@ -5669,7 +5698,7 @@ GameObject:
   - component: {fileID: 1550090097}
   - component: {fileID: 1550090098}
   - component: {fileID: 1550090100}
-  - component: {fileID: 1550090099}
+  - component: {fileID: 1550090101}
   m_Layer: 0
   m_Name: plantDig (9)
   m_TagString: Untagged
@@ -5796,7 +5825,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &1550090099
+--- !u!114 &1550090100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550090095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &1550090101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5840,7 +5890,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 1550090100}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -5852,26 +5902,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1550090100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550090095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1686233434
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,7 +6554,7 @@ GameObject:
   - component: {fileID: 1966365025}
   - component: {fileID: 1966365026}
   - component: {fileID: 1966365028}
-  - component: {fileID: 1966365027}
+  - component: {fileID: 1966365029}
   m_Layer: 0
   m_Name: plantDig (12)
   m_TagString: Untagged
@@ -6651,7 +6681,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &1966365027
+--- !u!114 &1966365028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966365023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &1966365029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6695,7 +6746,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 1966365028}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -6707,26 +6758,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1966365028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966365023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &1989923617
 GameObject:
   m_ObjectHideFlags: 0
@@ -8995,7 +9026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9031,7 +9062,7 @@ GameObject:
   - component: {fileID: 2123685473}
   - component: {fileID: 2123685474}
   - component: {fileID: 2123685476}
-  - component: {fileID: 2123685475}
+  - component: {fileID: 2123685477}
   m_Layer: 0
   m_Name: plantDig (7)
   m_TagString: Untagged
@@ -9158,7 +9189,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &2123685475
+--- !u!114 &2123685476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123685471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &2123685477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9202,7 +9254,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 2123685476}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -9214,26 +9266,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2123685476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123685471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1 &2127972781
 GameObject:
   m_ObjectHideFlags: 0
@@ -9246,7 +9278,7 @@ GameObject:
   - component: {fileID: 2127972783}
   - component: {fileID: 2127972784}
   - component: {fileID: 2127972786}
-  - component: {fileID: 2127972785}
+  - component: {fileID: 2127972787}
   m_Layer: 0
   m_Name: plantDig (10)
   m_TagString: Untagged
@@ -9373,7 +9405,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1730598, y: 1.0402048}
   m_EdgeRadius: 0
---- !u!114 &2127972785
+--- !u!114 &2127972786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127972781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plant
+  plantStatus: {fileID: 1175208433}
+  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
+  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
+  plantDay: 0
+  seedPlant: 0
+  selectDisplay: {fileID: 1150420802}
+--- !u!114 &2127972787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9417,7 +9470,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1175208434}
+      - m_Target: {fileID: 2127972786}
         m_TargetAssemblyTypeName: plant, Assembly-CSharp
         m_MethodName: plantation
         m_Mode: 1
@@ -9429,26 +9482,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2127972786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127972781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5abd7f79a3d84248984c6459b9f9848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::plant
-  plantStatus: {fileID: 1175208433}
-  noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
-  plantDay1: {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay2: {fileID: 3438751497164096939, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay3: {fileID: 1284974253751578566, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay4: {fileID: 7527142272473701844, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
-  plantDay: 0
-  seedPlant: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
