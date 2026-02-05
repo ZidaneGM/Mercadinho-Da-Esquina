@@ -346,6 +346,7 @@ GameObject:
   - component: {fileID: 275969962}
   - component: {fileID: 275969964}
   - component: {fileID: 275969963}
+  - component: {fileID: 275969965}
   m_Layer: 5
   m_Name: seedChoice1 (1)
   m_TagString: Untagged
@@ -410,6 +411,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275969961}
   m_CullTransparentMesh: 1
+--- !u!114 &275969965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275969961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e9275060df9b9489a057badac4caf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::confirmSeed
+  selectSlot: {fileID: 0}
+  thisSeed: 3
 --- !u!1 &280223343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,6 +2056,7 @@ GameObject:
   - component: {fileID: 432158098}
   - component: {fileID: 432158100}
   - component: {fileID: 432158099}
+  - component: {fileID: 432158101}
   m_Layer: 5
   m_Name: seedChoice1 (2)
   m_TagString: Untagged
@@ -2105,6 +2121,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432158097}
   m_CullTransparentMesh: 1
+--- !u!114 &432158101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432158097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e9275060df9b9489a057badac4caf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::confirmSeed
+  selectSlot: {fileID: 0}
+  thisSeed: 2
 --- !u!1 &454226714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,6 +3152,7 @@ GameObject:
   - component: {fileID: 760206347}
   - component: {fileID: 760206349}
   - component: {fileID: 760206348}
+  - component: {fileID: 760206350}
   m_Layer: 5
   m_Name: seedChoice1 (4)
   m_TagString: Untagged
@@ -3186,6 +3217,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760206346}
   m_CullTransparentMesh: 1
+--- !u!114 &760206350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760206346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e9275060df9b9489a057badac4caf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::confirmSeed
+  selectSlot: {fileID: 0}
+  thisSeed: 5
 --- !u!1 &764021911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3850,7 +3895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1150420803
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3890,6 +3935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   selectSlot: {fileID: 0}
+  selectSeed: 0
 --- !u!1 &1175208431
 GameObject:
   m_ObjectHideFlags: 0
@@ -5272,6 +5318,7 @@ GameObject:
   - component: {fileID: 1485223164}
   - component: {fileID: 1485223166}
   - component: {fileID: 1485223165}
+  - component: {fileID: 1485223167}
   m_Layer: 5
   m_Name: seedChoice1 (3)
   m_TagString: Untagged
@@ -5336,6 +5383,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485223163}
   m_CullTransparentMesh: 1
+--- !u!114 &1485223167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485223163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e9275060df9b9489a057badac4caf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::confirmSeed
+  selectSlot: {fileID: 0}
+  thisSeed: 4
 --- !u!1 &1495459548
 GameObject:
   m_ObjectHideFlags: 0
@@ -5426,6 +5487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::confirmSeed
   selectSlot: {fileID: 0}
+  thisSeed: 1
 --- !u!114 &1495459553
 MonoBehaviour:
   m_ObjectHideFlags: 0

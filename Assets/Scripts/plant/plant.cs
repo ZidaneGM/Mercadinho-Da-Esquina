@@ -21,11 +21,6 @@ public class plant : MonoBehaviour
         plantSwitch(); // chama o switch pra escolher o sprite baseado no dia atual da planta
         
     }
-
-    public void OnMouseDown() //função chamada quando clica no slot
-    {
-        plantation();
-    }
     
     public void plantation() //chamando a função diretamente com um componente button que acessa essa função
     {
@@ -33,8 +28,13 @@ public class plant : MonoBehaviour
         {
             
             selectDisplay.SetActive(true); //ativa a tela de seleção de sement
-            var path = selectDisplay.GetComponent<plantationPath>();
-            path.SetSlot(gameObject); //passando slot como parametro
+            var path = selectDisplay.GetComponent<plantationPath>();//passa slot pro script da tela de seleção de semente
+            var pathTwo = selectDisplay.GetComponentsInChildren<confirmSeed>();//passa o slot pro script de cada semnte
+            path.SetSlot(gameObject); //passando slot como parametro para tela de seleção de semente
+            foreach (confirmSeed seed in pathTwo) //fazendo um loop em cada semente
+            {
+                seed.SetSlot(gameObject); //passando slot como parametro para cada semente
+            }
              //manda o slot atual para o script plantationPath
             
         }
@@ -65,6 +65,7 @@ public class plant : MonoBehaviour
                 
                 plantStatus.sprite = noPlant;
                 break;
+                
             case 1:
                 
                 plantStatus.sprite = plantDay1;

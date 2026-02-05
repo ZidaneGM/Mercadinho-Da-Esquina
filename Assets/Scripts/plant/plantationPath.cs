@@ -3,19 +3,17 @@ using UnityEngine;
 public class plantationPath : MonoBehaviour
 {
     [SerializeField] public GameObject selectSlot;
+    [SerializeField] public int selectSeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     public void SetSlot(GameObject slot)
     {
         selectSlot = slot;
     }
-    void Start()
+    public void SetSeed(int seed)
     {
-        
+        selectSeed = seed;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
