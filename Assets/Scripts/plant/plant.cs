@@ -5,19 +5,45 @@ public class plant : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer plantStatus;
     [SerializeField] private Sprite noPlant;
-    [SerializeField] private Sprite plantDay1;
-    [SerializeField] private Sprite plantDay2;
-    [SerializeField] private Sprite plantDay3;
-    [SerializeField] private Sprite plantDay4;
+
     public float plantDay = 0; //startando o dia atua da platação em 0, provavelmente é melhor dar essa atribuição em outro lugar, mas ainda n sei 
     public float seedPlant = 0; //guardando qual a planta desse slot //no momento so funciona a usando a cenoura
     [SerializeField] private GameObject selectDisplay;
- 
+    
+    [SerializeField] private Sprite[] carrotSprites;
+    [SerializeField] private Sprite[] cornSprites;
+    [SerializeField] private Sprite[] eggplantSprites;
+    [SerializeField] private Sprite[] wheatSprites;
+    [SerializeField] private Sprite[] pumpkinSprites;
+
+    [SerializeField] private Sprite[] plantDaySprites;
+    
     
 
     // Update is called once per frame
     void Update()
     {
+        if(seedPlant == 1) //cenoura
+        {
+            plantDaySprites = carrotSprites;
+        }
+        else if(seedPlant == 2) //milho
+        {
+            plantDaySprites = cornSprites;
+        }
+        else if(seedPlant == 3) //berinjela
+        {
+            plantDaySprites = eggplantSprites;
+        }
+        else if(seedPlant == 4) //trigo
+        {
+            plantDaySprites = wheatSprites;
+        }
+        else if(seedPlant == 5) //abobora
+        {
+            plantDaySprites = pumpkinSprites;
+        }
+
         plantSwitch(); // chama o switch pra escolher o sprite baseado no dia atual da planta
         
     }
@@ -68,19 +94,23 @@ public class plant : MonoBehaviour
                 
             case 1:
                 
-                plantStatus.sprite = plantDay1;
+                plantStatus.sprite = plantDaySprites[0];
                 break;
             case 2:
                 
-                plantStatus.sprite = plantDay2;
+                plantStatus.sprite = plantDaySprites[1];
                 break;
             case 3:
                 
-                plantStatus.sprite = plantDay3;
+                plantStatus.sprite = plantDaySprites[2];
                 break;
             case 4:
                 
-                plantStatus.sprite = plantDay4;
+                plantStatus.sprite = plantDaySprites[3];
+                break;
+            case 5:
+                
+                plantStatus.sprite = plantDaySprites[4];
                 break;
             default:
                 //"Não conseguiu ler o dia da planta ou passou do dia 4"
