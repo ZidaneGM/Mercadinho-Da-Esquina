@@ -6,6 +6,7 @@ TagManager:
   tags:
   - limitWall
   - seedSelect
+  - backpack
   layers:
   - Default
   - TransparentFX
