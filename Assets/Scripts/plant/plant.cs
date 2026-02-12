@@ -47,7 +47,10 @@ public class plant : MonoBehaviour
         plantSwitch(); // chama o switch pra escolher o sprite baseado no dia atual da planta
         
     }
-    
+    public void closeDisplay() //função para fechar a tela de seleção de semente, chamada por um botão na tela de seleção
+    {
+        selectDisplay.SetActive(false);
+    }
     public void plantation() //chamando a função diretamente com um componente button que acessa essa função
     {
         if(plantDay == 0) //se o slot n tem plantação
