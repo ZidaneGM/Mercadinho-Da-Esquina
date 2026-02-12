@@ -5,7 +5,7 @@ public class backpack : MonoBehaviour
 {
 
     //quantidade de sementes e plantas que o jogador tem, pode ser acessada por outros scripts para verificar se o jogador tem a quantidade necessária para plantar ou vender
-    [SerializeField] public TextMeshProUGUI []seeds;
+    [SerializeField] public TextMeshProUGUI []seeds; //array com o texto de cada semente para atualizar a quantidade na UI
     [SerializeField] public int carrotSeed;
     [SerializeField] public int cornSeed;
     [SerializeField] public int eggplantSeed;
@@ -13,7 +13,7 @@ public class backpack : MonoBehaviour
     [SerializeField] public int pumpkinSeed;
 
     //quantidade de plantas que o jogador tem, pode ser acessada por outros scripts para verificar se o jogador tem a quantidade necessária para vender
-    [SerializeField] public TextMeshProUGUI []plants;
+    [SerializeField] public TextMeshProUGUI []plants; //array com o texto de cada planta para atualizar a quantidade na UI
     [SerializeField] public int carrot;
     [SerializeField] public int corn;
     [SerializeField] public int eggplant;
