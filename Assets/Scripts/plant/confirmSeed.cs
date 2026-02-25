@@ -15,7 +15,7 @@ public class confirmSeed : MonoBehaviour
     {
         
         selectSlot.GetComponent<plant>().seedPlant = thisSeed; // passa o valor int da semente selecionada
-        selectSlot.GetComponent<plant>().plantDay = 1; // inicia o dia da planta em 1
+        selectSlot.GetComponent<plant>().plantDay = GameObject.FindWithTag("GameController").GetComponent<playerController>().dayCount; // joga o dia que a semente foi plantada para o script da planta, para depois comparar com o dia atual do jogo e fazer a planta crescer
         transform.parent.gameObject.SetActive(false); //desativa a tela de seleção de semente, o objeto pai a esse
     }
 }

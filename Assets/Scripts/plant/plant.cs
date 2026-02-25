@@ -8,6 +8,7 @@ public class plant : MonoBehaviour
 
     public float plantDay = 0; //startando o dia atua da platação em 0, provavelmente é melhor dar essa atribuição em outro lugar, mas ainda n sei 
     public float seedPlant = 0; //guardando qual a planta desse slot //no momento so funciona a usando a cenoura
+    public float nowDay = 0; //variável para guardar o dia atual do jogo, para comparar com o dia da planta e fazer ela crescer, essa variável provavelmente vai ser retirada e o dia atual do jogo vai ser pego diretamente de outro script
     [SerializeField] private GameObject selectDisplay;
     
     [SerializeField] private Sprite[] carrotSprites;
