@@ -9,6 +9,7 @@ public class plant : MonoBehaviour
     public float plantDay = 0; //startando o dia atua da platação em 0, provavelmente é melhor dar essa atribuição em outro lugar, mas ainda n sei 
     public float seedPlant = 0; //guardando qual a planta desse slot //no momento so funciona a usando a cenoura
     public float nowDay = 0; //variável para guardar o dia atual do jogo, para comparar com o dia da planta e fazer ela crescer, essa variável provavelmente vai ser retirada e o dia atual do jogo vai ser pego diretamente de outro script
+    public float glowDay = 0; //variavel pra ver qual dia esta o crescimento da planta
     [SerializeField] private GameObject selectDisplay;
     
     [SerializeField] private Sprite[] carrotSprites;
@@ -24,29 +25,13 @@ public class plant : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(seedPlant == 1) //cenoura
-        {
-            plantDaySprites = carrotSprites;
-        }
-        else if(seedPlant == 2) //milho
-        {
-            plantDaySprites = cornSprites;
-        }
-        else if(seedPlant == 3) //berinjela
-        {
-            plantDaySprites = eggplantSprites;
-        }
-        else if(seedPlant == 4) //trigo
-        {
-            plantDaySprites = wheatSprites;
-        }
-        else if(seedPlant == 5) //abobora
-        {
-            plantDaySprites = pumpkinSprites;
-        }
+        whatSeed(); //chama o switch para escolher a array de sprites baseado na semente plantada
 
-        plantSwitch(); // chama o switch pra escolher o sprite baseado no dia atual da planta
-        
+        if(seedPlant != 0)
+        {
+            plantSwitch(); // chama o switch pra escolher o sprite baseado no dia atual da planta
+            lookGrow(); //chama a função que calcula o dia de crescimento da planta, comparando o dia atual do jogo com o dia que a planta foi plantada
+        }        
     }
     public void closeDisplay() //função para fechar a tela de seleção de semente, chamada por um botão na tela de seleção
     {
@@ -54,7 +39,7 @@ public class plant : MonoBehaviour
     }
     public void plantation() //chamando a função diretamente com um componente button que acessa essa função
     {
-        if(plantDay == 0) //se o slot n tem plantação
+        if(glowDay == 0) //se o slot n tem plantação
         {
             
             selectDisplay.SetActive(true); //ativa a tela de seleção de sement
@@ -72,15 +57,15 @@ public class plant : MonoBehaviour
         //aumentar os dias da planta para testar ela passar pelos estagio de crescimento, esse função será excluida e os dias;estagio da planta seram mudadas automaticamente quando passar os dias no jogo
         else
         {   
-            if(plantDay < 4)
+            if(glowDay < 4)
             {
-                plantDay = plantDay + 1;
+                glowDay = glowDay + 1;
             }
             
         }
         // parte ate o comentario acima sera retirada no futuro
 
-        if(plantDay == 4)
+        if(glowDay == 4)
         {
             //aqui vai entrar a logica de colher
             Debug.Log("pode colher");
@@ -89,7 +74,7 @@ public class plant : MonoBehaviour
     }
     private void plantSwitch()
     {
-        switch (plantDay)
+        switch (glowDay)
         {
             case 0:
                 
@@ -112,13 +97,44 @@ public class plant : MonoBehaviour
                 
                 plantStatus.sprite = plantDaySprites[3];
                 break;
-            case 5:
-                
-                plantStatus.sprite = plantDaySprites[4];
-                break;
             default:
                 //"Não conseguiu ler o dia da planta ou passou do dia 4"
                 break;
         }       
+    }
+    private void whatSeed()
+    {
+        switch (seedPlant)
+        {
+            case 0:
+                //sem planta
+                break;
+            case 1:
+                plantDaySprites = carrotSprites;
+                break;
+            case 2:
+                plantDaySprites = cornSprites;
+                break;
+            case 3:
+                plantDaySprites = eggplantSprites;
+                break;
+            case 4:
+                plantDaySprites = wheatSprites;
+                break;
+            case 5:
+                plantDaySprites = pumpkinSprites;
+                break;
+            default:
+                //"Não conseguiu ler a semente"
+                break;
+        }
+    }
+    private void lookGrow()
+    {
+        
+        
+        glowDay = (GameObject.FindWithTag("GameController").GetComponent<playerController>().dayCount - plantDay) + 1;  //calcula o dia atual do jogo menos o dia que a planta foi plantada, para saber quantos dias ela tem
+        
+        
     }
 }
