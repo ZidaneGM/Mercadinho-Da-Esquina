@@ -1467,6 +1467,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -3321,6 +3322,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -4313,7 +4315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &374291268
 Transform:
   m_ObjectHideFlags: 0
@@ -6321,6 +6323,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -6821,6 +6824,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -9066,6 +9070,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -9304,6 +9309,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -11301,6 +11307,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -11881,13 +11888,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013759754}
+  - component: {fileID: 1013759755}
   m_Layer: 5
   m_Name: addDay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1013759754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11915,6 +11923,19 @@ RectTransform:
   m_AnchoredPosition: {x: 43, y: 48}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1013759755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013759753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957be76e52c7f7f46bb06ee75cab9087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  nowDay: {fileID: 113273214}
 --- !u!1 &1032607861
 GameObject:
   m_ObjectHideFlags: 0
@@ -12616,6 +12637,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -13033,6 +13055,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -13271,6 +13294,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -13777,6 +13801,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -13821,7 +13846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1240313616
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13951,6 +13976,7 @@ GameObject:
   - component: {fileID: 1245432072}
   - component: {fileID: 1245432074}
   - component: {fileID: 1245432073}
+  - component: {fileID: 1245432075}
   m_Layer: 5
   m_Name: addOneDay
   m_TagString: Untagged
@@ -14016,6 +14042,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245432071}
   m_CullTransparentMesh: 1
+--- !u!114 &1245432075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245432071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1245432073}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1013759755}
+        m_TargetAssemblyTypeName: addDay, Assembly-CSharp
+        m_MethodName: addxDay
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1251733318
 GameObject:
   m_ObjectHideFlags: 0
@@ -15109,6 +15191,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -15500,6 +15583,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -16641,6 +16725,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -16879,6 +16964,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -19121,6 +19207,7 @@ GameObject:
   - component: {fileID: 1907001849}
   - component: {fileID: 1907001851}
   - component: {fileID: 1907001850}
+  - component: {fileID: 1907001852}
   m_Layer: 5
   m_Name: addFiveDay
   m_TagString: Untagged
@@ -19186,6 +19273,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907001848}
   m_CullTransparentMesh: 1
+--- !u!114 &1907001852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907001848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1907001850}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1013759755}
+        m_TargetAssemblyTypeName: addDay, Assembly-CSharp
+        m_MethodName: addxDay
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1966365023
 GameObject:
   m_ObjectHideFlags: 0
@@ -19397,6 +19540,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -21909,6 +22053,7 @@ GameObject:
   - component: {fileID: 2020820979}
   - component: {fileID: 2020820981}
   - component: {fileID: 2020820980}
+  - component: {fileID: 2020820982}
   m_Layer: 5
   m_Name: addThreeDay
   m_TagString: Untagged
@@ -21974,6 +22119,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020820978}
   m_CullTransparentMesh: 1
+--- !u!114 &2020820982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020820978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2020820980}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1013759755}
+        m_TargetAssemblyTypeName: addDay, Assembly-CSharp
+        m_MethodName: addxDay
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2034438079
 GameObject:
   m_ObjectHideFlags: 0
@@ -23042,6 +23243,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -23081,7 +23283,7 @@ GameObject:
   - component: {fileID: 2125432656}
   m_Layer: 0
   m_Name: playerController
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23100,7 +23302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   money: {fileID: 244309254}
   totalMoney: 0
-  dayCount: 0
+  dayCount: 1
   seeds:
   - {fileID: 860313}
   - {fileID: 617259017}
@@ -23349,6 +23551,7 @@ MonoBehaviour:
   noPlant: {fileID: 1022973827, guid: 97c4301345526254ab43136a51f1a9b8, type: 3}
   plantDay: 0
   seedPlant: 0
+  nowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
