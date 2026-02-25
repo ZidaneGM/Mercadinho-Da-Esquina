@@ -1271,7 +1271,7 @@ GameObject:
   - component: {fileID: 99884856}
   m_Layer: 0
   m_Name: plantDig (3)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1468,6 +1468,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -3126,7 +3127,7 @@ GameObject:
   - component: {fileID: 280223350}
   m_Layer: 0
   m_Name: plantDig (18)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3323,6 +3324,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -6127,7 +6129,7 @@ GameObject:
   - component: {fileID: 454226721}
   m_Layer: 0
   m_Name: plantDig (20)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6324,6 +6326,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -6628,7 +6631,7 @@ GameObject:
   - component: {fileID: 481649991}
   m_Layer: 0
   m_Name: plantDig (4)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6825,6 +6828,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -8874,7 +8878,7 @@ GameObject:
   - component: {fileID: 764021918}
   m_Layer: 0
   m_Name: plantDig (6)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9071,6 +9075,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -9113,7 +9118,7 @@ GameObject:
   - component: {fileID: 764865676}
   m_Layer: 0
   m_Name: plantDig (5)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9310,6 +9315,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -11111,7 +11117,7 @@ GameObject:
   - component: {fileID: 949115911}
   m_Layer: 0
   m_Name: plantDig (8)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11308,6 +11314,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -12543,7 +12550,7 @@ GameObject:
   - component: {fileID: 1175208436}
   m_Layer: 0
   m_Name: plantDig
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12638,6 +12645,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -12859,7 +12867,7 @@ GameObject:
   - component: {fileID: 1177916006}
   m_Layer: 0
   m_Name: plantDig (1)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13056,6 +13064,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -13098,7 +13107,7 @@ GameObject:
   - component: {fileID: 1207092097}
   m_Layer: 0
   m_Name: plantDig (16)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13295,6 +13304,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -13605,7 +13615,7 @@ GameObject:
   - component: {fileID: 1237073236}
   m_Layer: 0
   m_Name: plantDig (2)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13802,6 +13812,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -14995,7 +15006,7 @@ GameObject:
   - component: {fileID: 1397148912}
   m_Layer: 0
   m_Name: plantDig (11)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15192,6 +15203,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -15387,7 +15399,7 @@ GameObject:
   - component: {fileID: 1414332376}
   m_Layer: 0
   m_Name: plantDig (14)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15584,6 +15596,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -16529,7 +16542,7 @@ GameObject:
   - component: {fileID: 1536219756}
   m_Layer: 0
   m_Name: plantDig (22)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16726,6 +16739,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -16768,7 +16782,7 @@ GameObject:
   - component: {fileID: 1550090102}
   m_Layer: 0
   m_Name: plantDig (9)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16965,6 +16979,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -19344,7 +19359,7 @@ GameObject:
   - component: {fileID: 1966365030}
   m_Layer: 0
   m_Name: plantDig (12)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19541,6 +19556,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -23047,7 +23063,7 @@ GameObject:
   - component: {fileID: 2123685478}
   m_Layer: 0
   m_Name: plantDig (7)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23244,6 +23260,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}
@@ -23355,7 +23372,7 @@ GameObject:
   - component: {fileID: 2127972788}
   m_Layer: 0
   m_Name: plantDig (10)
-  m_TagString: Untagged
+  m_TagString: digSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23552,6 +23569,7 @@ MonoBehaviour:
   plantDay: 0
   seedPlant: 0
   nowDay: 0
+  glowDay: 0
   selectDisplay: {fileID: 1150420802}
   carrotSprites:
   - {fileID: -7350565876878431347, guid: a64df29ccbc73e54c96b79fee304f6bc, type: 3}

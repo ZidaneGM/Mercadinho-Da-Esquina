@@ -33,6 +33,8 @@ public class plant : MonoBehaviour
             lookGrow(); //chama a função que calcula o dia de crescimento da planta, comparando o dia atual do jogo com o dia que a planta foi plantada
         }        
     }
+
+    //funções chamada por botões
     public void closeDisplay() //função para fechar a tela de seleção de semente, chamada por um botão na tela de seleção
     {
         selectDisplay.SetActive(false);
@@ -72,6 +74,8 @@ public class plant : MonoBehaviour
         }
 
     }
+
+    //fuções chamadas no update
     private void plantSwitch()
     {
         switch (glowDay)
